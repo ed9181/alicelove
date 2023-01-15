@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+
+:root {
+    --bg-color: #FAEAB1;
+    --text-color: #FFFFD0;
+    --box-color: #FF597B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Fenix', serif;
+}
+
+.login {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    padding: 70px 30px 44px;
+    border-radius: 1.50rem;
+    background: var(--box-color);
+    text-align: center;
+}
+
+.login > img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.title--alice {
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 0 0 40px;
+}
+
+.login-form {
+    display: grid;
+    gap: 35px;
+    place-items: center;
+    width: 100%;
+    font-family: inherit;
+    margin: 0;
+}
+
+.login-form > input, .login-form > button {
+    height: 50px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    border-radius: 50px;
+}
+
+.login-form > input {
+    width: 90%;
+    border: 0;
+    border: 4px dashed rgba(251, 37, 118, 0.4);
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    transition: all 0.6s;
+}
+
+.login-form > input:hover {
+    border: 5px solid #FFEA20;
+}
+
+.login-form > input:focus {
+    border: 5px double rgba(251, 37, 118, 1.0);
+}
+
+.login-form > button {
+    cursor: pointer;
+    width: 70%;
+    height: 56px;
+    background: #72FFFF;
+    border: 4px dashed rgba(251, 37, 118, 0.4);
+    font-size: 20px;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+.login-form > button:hover {
+    color: #FFFFFF;
+    border: 5px solid #FFEA20;
+    background-color: rgb(251, 37, 118);
+}
+
+.login-form > button:focus {
+    color: rgb(251, 37, 118);
+    border: 5px double rgba(251, 37, 118, 1.0);
+    background-color: #FFEA20;
+}
+
+.login-form > a {
+    color: #FAEAB1;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.login-form > a:hover {
+    color: #ffd53b;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.login-form > a:focus {
+    color: #72FFFF;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+@media (width >= 450px){
+    .login{
+        width: 380px;
+    }
+}
+
+@media (width >= 500px){
+    body{
+        padding: 0;
+    }
+}
+
+@media (width >= 1200px){
+    .login{
+        width: 25%;
+    }
+}
